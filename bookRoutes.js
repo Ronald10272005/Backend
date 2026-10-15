@@ -5,5 +5,7 @@ const bookRoutes = express.Router();
 
 bookRoutes.get('/all', bookController.fetchAllBooks);
 bookRoutes.post('/', bookController.createBooks);
+bookRoutes.put('/:id', bookController.editBook);
+bookRoutes.delete('/:id', bookController.deleteBook);
 
 export default bookRoutes;
